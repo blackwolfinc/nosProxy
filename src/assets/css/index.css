@@ -54,7 +54,7 @@ code {
 }
 
 .MoonAnimation {
-  animation: MoonAnimation 16s ease 0s infinite normal forwards;
+  animation: MoonAnimation 20s ease 0s infinite normal forwards;
 }
 
 @keyframes MoonAnimation {
@@ -65,7 +65,7 @@ code {
   }
   50% {
     animation-timing-function: ease-in;
-    opacity: 0.8;
+    opacity: 0.9;
     transform: translateY(85px) translateX(-80px) scale(0.9);
   }
   0% {
