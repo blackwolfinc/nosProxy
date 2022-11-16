@@ -30,3 +30,47 @@ code {
 .counting {
   font-family: "Righteous", cursive !important;
 }
+
+.SpaceAnimation {
+  animation: SpaceShip 8s ease 0s infinite normal forwards;
+}
+
+@keyframes SpaceShip {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-25px) translateX(-20px);
+  }
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.MoonAnimation {
+  animation: MoonAnimation 16s ease 0s infinite normal forwards;
+}
+
+@keyframes MoonAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    opacity: 0.8;
+    transform: translateY(85px) translateX(-80px) scale(0.9);
+  }
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

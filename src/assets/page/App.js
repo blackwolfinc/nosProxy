@@ -25,14 +25,14 @@ function App() {
         <img
           src={Rocket}
           alt=""
-          className="w-[65rem] mb-[-19.5rem] z-10 absolute bottom-0 "
+          className="w-[65rem] mb-[-19.5rem] z-10 absolute bottom-0 SpaceAnimation"
         />
       </div>
       <div>
         <img
           src={MoonIcon}
           alt=""
-          className="w-[55rem] absolute bottom-0 opacity-80"
+          className="w-[55rem] absolute bottom-0 opacity-80 MoonAnimation"
         />
       </div>
     </div>
