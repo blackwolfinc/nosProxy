@@ -4,8 +4,12 @@ import MoonIcon from "../img/webp/Moon.webp";
 import NextButton from "../img/icon/Login.webp";
 import Rocket from "../img/webp/Rocket.webp";
 import Typewriter from "typewriter-effect";
+import { AboutUs } from "../components/AboutUs";
+import { useState } from "react";
 
 function App() {
+  const [OpenAbout, setOpenAbout] = useState(false);
+
   return (
     <div className="Homepage w-full overflow-hidden relative h-screen flex flex-col justify-center">
       <Header />
@@ -51,6 +55,16 @@ function App() {
           className="w-[55rem] absolute bottom-0 opacity-80 MoonAnimation"
         />
       </div>
+      <div className="z-20 absolute bottom-[2rem] counting right-[4rem] text-[1.3rem] text-[#fff]">
+        <button
+          onClick={() => {
+            setOpenAbout(!OpenAbout);
+          }}
+        >
+          About Us
+        </button>
+      </div>
+      {OpenAbout ? <AboutUs open={setOpenAbout} /> : null}
     </div>
   );
 }
