@@ -1,7 +1,7 @@
 import { Header } from "../components/Header";
 import Logo from "../img/common/Logo.png";
 import MoonIcon from "../img/webp/Moon.webp";
-import NextButton from "../img/icon/Login.png";
+import NextButton from "../img/icon/Login.webp";
 import Rocket from "../img/webp/Rocket.webp";
 import Typewriter from "typewriter-effect";
 
