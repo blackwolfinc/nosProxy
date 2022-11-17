@@ -29,17 +29,20 @@ function App() {
           }}
         />
       </div>
-      <div className="z-20 text-center text-[#fff] counting flex justify-center text-xl PopUPAnimation mt-[3rem]">
-        <button className="bg-[#323639]/80 px-[4rem] flex  items-center hover:scale-105  space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300	 rounded-[52.11px] border-[#78818A] border-[2px]">
+      <div className="w-full bg-gradient-to-br from-gray-700/20 via-gray-900/20 to-black/80 h-screen absolute z-[18]">
+        {" "}
+      </div>
+      <div className="z-20 text-center text-[#fff] counting flex justify-center text-xl  PopUPAnimation mt-[3rem]">
+        <button className="bg-[#323639]/80 px-[4rem] flex  items-center hover:scale-105 shadow-2xl space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300	 rounded-[52.11px] border-[#78818A] border-[2px]">
           <span>LOGIN OR JOIN</span>
           <img src={NextButton} alt=""></img>
         </button>
       </div>
-      <div>
+      <div className="SpaceAnimationFrist">
         <img
           src={Rocket}
           alt=""
-          className="w-[65rem] mb-[-19.5rem] z-10 absolute bottom-0 SpaceAnimation"
+          className="w-[65rem] mb-[-19.5rem] z-10 absolute bottom-0  SpaceAnimation"
         />
       </div>
       <div>

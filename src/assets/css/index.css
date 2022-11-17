@@ -31,25 +31,62 @@ code {
   font-family: "Righteous", cursive !important;
 }
 
+.SpaceAnimationFrist {
+  animation: SpaceShipFrist 9s ease 0s normal forwards;
+  z-index: 12;
+}
+
+@keyframes SpaceShipFrist {
+  0% {
+    animation-timing-function: ease-in;
+
+    transform: translateY(80rem) scale(0.6);
+  }
+  80% {
+    animation-timing-function: ease-in;
+
+    transform: translateY(200px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+
+    transform: translateY(100px);
+  }
+}
+
 .SpaceAnimation {
-  animation: SpaceShip 8s ease 0s infinite normal forwards;
+  animation: SpaceShip 70s ease-in-out 9s infinite normal backwards;
 }
 
 @keyframes SpaceShip {
   0% {
     animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(200px);
   }
-  50% {
-    animation-timing-function: ease-in;
+  20% {
+    animation-timing-function: ease;
     opacity: 1;
-    transform: translateY(-25px) translateX(-20px);
+    transform: translateY(150px) translateX(-80px);
   }
-  0% {
-    animation-timing-function: ease-in;
+  40% {
+    animation-timing-function: ease;
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(200px) translateX(-60px);
+  }
+  60% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: translateY(150px) translateX(20px);
+  }
+  80% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: translateY(50px) translateX(20px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(200px);
   }
 }
 
@@ -66,7 +103,7 @@ code {
   50% {
     animation-timing-function: ease-in;
     opacity: 0.9;
-    transform: translateY(105px) translateX(-80px) scale(0.95) rotate(-30deg);
+    transform: translateY(105px) translateX(-80px) scale(0.95);
   }
   0% {
     animation-timing-function: ease-in;
@@ -93,6 +130,30 @@ code {
   100% {
     animation-timing-function: ease-in;
     opacity: 1;
+    /* transform: translateY(0px); */
+  }
+}
+
+.PopUPAnimationNumber {
+  animation: PopUPAnimationNumber 2s ease 0s normal forwards;
+}
+
+@keyframes PopUPAnimationNumber {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(200px) scale(0.3);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    opacity: 0.1;
+    transform: scale(0.8);
+    /* transform: translateY(85px) translateX(-80px) scale(0.95); */
+  }
+  100% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: scale(1);
     /* transform: translateY(0px); */
   }
 }

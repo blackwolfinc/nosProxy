@@ -8,7 +8,7 @@ export const Header = () => {
     for (let count = minimum; count <= maximum; count++) {
       setTimeout(() => {
         setCount(count);
-      }, 1000);
+      }, 1300);
     }
   };
 
@@ -17,13 +17,13 @@ export const Header = () => {
   }, []);
 
   return (
-    <div className="flex w-full justify-between px-[3rem] py-[3rem] absolute top-0">
+    <div className="flex w-full justify-between px-[3rem] py-[3rem] absolute top-0 z-30">
       <div>
         <img src={Logo} className={"w-[13rem]"} />
       </div>
 
-      <div>
-        <span className="counting text-[#fff]  tracking-[10px] text-7xl px-2">
+      <div className="PopUPAnimationNumber">
+        <span className="counting text-[#fff]  tracking-[10px] text-7xl px-2 ">
           {Count}
         </span>
         <span className="counting  text-[#fff] text-lg">+IPS</span>
