@@ -55,7 +55,7 @@ function App() {
           className="w-[55rem] absolute bottom-0 opacity-80 MoonAnimation"
         />
       </div>
-      <div className="z-20 absolute bottom-[2rem] counting right-[4rem] text-[1.3rem] text-[#fff]">
+      <div className="z-20 absolute PopUPAnimation  bottom-[2rem] counting right-[4rem] text-[1.3rem] text-[#fff]">
         <button
           onClick={() => {
             setOpenAbout(!OpenAbout);
