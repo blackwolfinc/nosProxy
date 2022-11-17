@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="Homepage w-full overflow-hidden relative h-screen flex flex-col justify-center">
       <Header />
-      <div className="w-full z-20 flex justify-center mt-[7rem] relative PopUPAnimation items-center">
+      <div className="w-full z-20 flex justify-center  sm:mt-[7rem] relative PopUPAnimation items-center">
         <div className="bg-[#FF8311] w-[10rem] h-[0.4rem] text-[#FF8311]"></div>
-        <img src={Logo} alt="" className="w-[25rem] " />
+        <img src={Logo} alt="" className="w-[16rem]  sm:w-[25rem] " />
         <div className="bg-[#FF8311] ml-[1rem] h-[0.4rem] w-[10rem] text-[#FF8311]"></div>
       </div>
       <div className="z-20 text-center text-[#fff] PopUPAnimation counting text-xl mt-[1rem]">
@@ -33,7 +33,7 @@ function App() {
         {" "}
       </div>
       <div className="z-20 text-center text-[#fff] counting flex justify-center text-xl  PopUPAnimation mt-[3rem]">
-        <button className="bg-[#323639]/80 px-[4rem] flex  items-center hover:scale-105 shadow-2xl space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300	 rounded-[52.11px] border-[#78818A] border-[2px]">
+        <button className="bg-[#323639]/80 px-[4rem] flex  items-center hover:scale-105 shadow-2xl space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300 	 rounded-[52.11px] border-[#78818A] border-[2px]">
           <span>LOGIN OR JOIN</span>
           <img src={NextButton} alt=""></img>
         </button>
@@ -42,7 +42,7 @@ function App() {
         <img
           src={Rocket}
           alt=""
-          className="w-[65rem] mb-[-19.5rem] z-10 absolute bottom-0  SpaceAnimation"
+          className="w-[65rem] mb-[-5rem] sm:mb-[-19.5rem] ml-[-5rem] sm:ml-0 z-10 absolute bottom-0  SpaceAnimation"
         />
       </div>
       <div>

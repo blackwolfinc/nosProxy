@@ -18,15 +18,15 @@ export const Header = () => {
 
   return (
     <div className="flex w-full justify-between px-[3rem] py-[3rem] absolute top-0 z-30">
-      <div>
+      <div className=" hidden sm:flex">
         <img src={Logo} className={"w-[13rem]"} />
       </div>
 
-      <div className="PopUPAnimationNumber">
-        <span className="counting text-[#fff]  tracking-[10px] text-7xl px-2 ">
+      <div className="PopUPAnimationNumber hidden sm:flex">
+        <span className="counting text-[#fff] drop-shadow-2xl	   tracking-[10px] text-7xl px-2 ">
           {Count}
         </span>
-        <span className="counting  text-[#fff] text-lg">+IPS</span>
+        <span className="counting  text-[#fff]  text-lg">+IPS</span>
       </div>
     </div>
   );

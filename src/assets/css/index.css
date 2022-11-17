@@ -23,6 +23,15 @@ code {
   background-repeat: no-repeat;
 }
 
+@media all and (max-width: 440px) {
+  .Homepage {
+    background: url("/src/assets/img/background/background.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+
 .textbutton {
   font-family: "Pontano Sans", sans-serif !important ;
 }
