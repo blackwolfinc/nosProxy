@@ -54,7 +54,7 @@ code {
 }
 
 .MoonAnimation {
-  animation: MoonAnimation 20s ease 0s infinite normal forwards;
+  animation: MoonAnimation 80s ease 0s infinite normal forwards;
 }
 
 @keyframes MoonAnimation {
@@ -66,11 +66,33 @@ code {
   50% {
     animation-timing-function: ease-in;
     opacity: 0.9;
-    transform: translateY(85px) translateX(-80px) scale(0.9);
+    transform: translateY(105px) translateX(-80px) scale(0.95) rotate(-30deg);
   }
   0% {
     animation-timing-function: ease-in;
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+.PopUPAnimation {
+  animation: PopUPAnimation 7s ease 0s normal forwards;
+}
+
+@keyframes PopUPAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    /* transform: translateY(0px); */
+  }
+  50% {
+    animation-timing-function: ease-in;
+    opacity: 0.5;
+    /* transform: translateY(85px) translateX(-80px) scale(0.95); */
+  }
+  100% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    /* transform: translateY(0px); */
   }
 }
