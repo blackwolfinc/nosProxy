@@ -1,10 +1,9 @@
 import { Header } from "../components/Header";
 import Logo from "../img/common/Logo.png";
-import MoonIcon from "../img/common/Moon.png";
+import MoonIcon from "../img/webp/Moon.webp";
 import NextButton from "../img/icon/Login.png";
-import Rocket from "../img/common/Rocket.png";
+import Rocket from "../img/webp/Rocket.webp";
 import Typewriter from "typewriter-effect";
-import { useEffect, useState } from "react";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <Header />
       <div className="w-full z-20 flex justify-center  sm:mt-[7rem] relative PopUPAnimation items-center">
         <div className="bg-[#FF8311] w-[10rem] h-[0.4rem] text-[#FF8311]"></div>
-        <img src={Logo} alt="" className="w-[16rem]  sm:w-[25rem] " />
+        <img src={Logo} alt="" className="w-[16rem] h-full  sm:w-[25rem] " />
         <div className="bg-[#FF8311] ml-[1rem] h-[0.4rem] w-[10rem] text-[#FF8311]"></div>
       </div>
       <div className="z-20 text-center text-[#fff] PopUPAnimation counting text-xl mt-[1rem]">
@@ -35,7 +34,7 @@ function App() {
       <div className="z-20 text-center text-[#fff] counting flex justify-center text-xl  PopUPAnimation mt-[3rem]">
         <button className="bg-[#323639]/80 px-[4rem] flex  items-center hover:scale-105 shadow-2xl space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300 	 rounded-[52.11px] border-[#78818A] border-[2px]">
           <span>LOGIN OR JOIN</span>
-          <img src={NextButton} alt=""></img>
+          <img src={NextButton} className={"w-[1rem] h-[1rem]"} alt=""></img>
         </button>
       </div>
       <div className="SpaceAnimationFrist">

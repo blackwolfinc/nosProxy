@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <div className="flex w-full justify-between px-[3rem] py-[3rem] absolute top-0 z-30">
       <div className=" hidden sm:flex">
-        <img src={Logo} className={"w-[13rem]"} />
+        <img src={Logo} alt="" className={"w-[13rem] h-full"} />
       </div>
 
       <div className="PopUPAnimationNumber hidden sm:flex">

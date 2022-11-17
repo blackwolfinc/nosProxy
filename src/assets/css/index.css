@@ -18,14 +18,14 @@ code {
 }
 
 .Homepage {
-  background: url("/src/assets/img/background/background.png");
+  background: url("/src/assets/img/webp/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media all and (max-width: 440px) {
   .Homepage {
-    background: url("/src/assets/img/background/background.png");
+    background: url("/src/assets/img/webp/background.webp");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -101,6 +101,30 @@ code {
 
 .MoonAnimation {
   animation: MoonAnimation 80s ease 0s infinite normal forwards;
+}
+
+@media all and (max-width: 440px) {
+  .MoonAnimation {
+    animation: MoonAnimation2 80s ease 0s infinite normal forwards;
+  }
+}
+
+@keyframes MoonAnimation2 {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    opacity: 0.9;
+    transform: translateY(105px) translateX(-80px) scale(0.95);
+  }
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes MoonAnimation {
