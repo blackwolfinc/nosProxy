@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 
@@ -26,6 +30,21 @@ code {
 @media all and (max-width: 440px) {
   .Homepage {
     background: url("/src/assets/img/webp/background.webp");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+
+.Package {
+  background: url("/src/assets/img/background/moonBackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 440px) {
+  .Package {
+    background: url("/src/assets/img/background/moonBackground.webp");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -210,4 +229,23 @@ code {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5c310975;
+}
+
+.slick-slider.center {
+  z-index: 18 !important;
+}
+
+div.slick-slide.slick-active {
+  opacity: 0.6 !important;
+}
+
+div.slick-slide {
+  opacity: 0.3 !important;
+}
+div.slick-slide.slick-active.slick-current {
+  opacity: 1 !important;
+}
+
+div.slick-slide.slick-center {
+  opacity: 1 !important;
 }
