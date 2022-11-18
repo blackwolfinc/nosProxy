@@ -183,11 +183,13 @@ function Package() {
               ref={(slider) => setSlider2(slider)}
               slidesToShow={3}
               swipeToSlide={true}
+              autoplaySpeed={5000}
+              autoplay={true}
               focusOnSelect={true}
               {...settings}
             >
               <div className="px-2">
-                <div className="bg-[#323639]/80 hover:scale-105 duration-300 flex-col border-[#4AB3FF]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
+                <div className="bg-[#323639]/80 scale-90 2xl:scale-100 hover:scale-100 duration-300 flex-col border-[#4AB3FF]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
                   <h3 className="counting text-2xl tracking-[5.5px]  text-[#4AB3FF] mb-[1rem]">
                     STANDARD
                   </h3>
@@ -197,7 +199,7 @@ function Package() {
                 </div>
               </div>
               <div className="px-2">
-                <div className="bg-[#323639]/80 hover:scale-105 duration-300  flex-col border-[#E72013]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
+                <div className="bg-[#323639]/80 scale-90 2xl:scale-100  hover:scale-100 duration-300  flex-col border-[#E72013]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
                   <h3 className="counting text-2xl tracking-[5.5px]  text-[#E72013] mb-[1rem]">
                     PRO
                   </h3>
@@ -209,7 +211,7 @@ function Package() {
               </div>
 
               <div className="px-2">
-                <div className="bg-[#323639]/80 hover:scale-105 duration-300  flex-col border-[#47C9DB]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
+                <div className="bg-[#323639]/80  scale-90 2xl:scale-100 hover:scale-100 duration-300  flex-col border-[#47C9DB]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
                   <h3 className="counting text-2xl tracking-[5.5px]  text-[#47C9DB] mb-[1rem]">
                     STARTER
                   </h3>
@@ -219,7 +221,7 @@ function Package() {
                 </div>
               </div>
               <div className="px-2">
-                <div className="bg-[#323639]/80 hover:scale-105 duration-300  flex-col border-[#FF8311]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
+                <div className="bg-[#323639]/80 scale-90 2xl:scale-100  hover:scale-100 duration-300  flex-col border-[#FF8311]/80 border-[2px]  flex z-40 text-center px-4 h-[8rem] justify-center items-center mx-[1rem] rounded-[5.9px]">
                   <h3 className="counting text-2xl tracking-[5.5px]  text-[#FF8311] mb-[1rem]">
                     POPULAR
                   </h3>

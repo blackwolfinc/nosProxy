@@ -17,7 +17,7 @@ function Homepage() {
     <div
       onWheel={(e) => {
         if (e.deltaY < 150) {
-          navigate("/package");
+          //   navigate("/package");
         }
       }}
       className="Homepage w-full overflow-hidden relative h-screen flex flex-col justify-center"
