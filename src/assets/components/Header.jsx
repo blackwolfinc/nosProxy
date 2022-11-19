@@ -38,7 +38,7 @@ export const Header = (data) => {
       <div
         className={`${
           OpenNavabar ? " bg-gradient-to-b from-[#222325]  to-[#222325]" : null
-        }  flex md:hidden w-full py-[0.8rem] items-center px-[1.5rem]  justify-between top-0  fixed `}
+        }  flex md:hidden w-full py-[1.5rem] items-center px-[1.5rem]  justify-between top-0  fixed `}
       >
         <img
           onClick={() => {
@@ -94,7 +94,7 @@ export const Header = (data) => {
       </div>
 
       {OpenNavabar ? (
-        <div className="fixed bottom-0 w-screen h-[92vh] flex justify-center space-y-10 text-2xl  text-white flex-col py-[2rem] bg-[#323639] z-50">
+        <div className="fixed bottom-0 w-screen h-[89vh] flex justify-center space-y-10 text-2xl  text-white flex-col py-[2rem] bg-[#323639] z-50">
           <button
             onClick={() => {
               setOpenNavabar(false);

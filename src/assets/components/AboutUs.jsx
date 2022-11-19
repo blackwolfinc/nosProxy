@@ -8,7 +8,7 @@ export const AboutUs = (data) => {
           onClick={() => {
             data.open(false);
           }}
-          className="flex absolute right-[0.8rem] top-[0.8rem]"
+          className="flex absolute right-[2rem] sm:right-[0.8rem] top-[4rem] sm:top-[0.8rem]"
         >
           <img src={NextButton} className={"w-[2rem] h-[2rem]"} alt=""></img>
         </button>
