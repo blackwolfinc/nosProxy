@@ -42,7 +42,7 @@ export const Header = (data) => {
           }}
           src={Logo}
           alt=""
-          className={"w-[5rem] h-full"}
+          className={"w-[5rem] opacity-75 h-full"}
         />
         <img
           src={MenuIcon}
@@ -96,7 +96,7 @@ export const Header = (data) => {
               setOpenNavabar(false);
               navigate("/");
             }}
-            className="hover:text-[#FF8311] hover:font-bold"
+            className="hover:text-[#FF8311]  hover:font-bold"
           >
             Homepage
           </button>

@@ -57,7 +57,7 @@ function Package() {
         <img
           src={Rocket}
           alt=""
-          className="w-[19rem] h-[35em] SpaceShipPackage   lg:ml-0 z-[16]  hidden lg:block top-[8vh] mt-[-9rem] right-[24vw] absolute   "
+          className="w-[17rem] SpaceShipPackage   lg:ml-0 z-[16]  hidden lg:block top-[3vh] mt-[-9rem] right-[24vw] absolute   "
         />
         <Slider asNavFor={Nav2} ref={(slider) => setSlider1(slider)}>
           <div className="flex w-full scale-90 lg:scale-100  lg:p-10  justify-center text-center mt-[3rem] ">
@@ -86,7 +86,7 @@ function Package() {
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
-                    ></img>
+                    />
                   </button>
                 </div>
               </div>
@@ -118,7 +118,7 @@ function Package() {
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
-                    ></img>
+                    />
                   </button>
                 </div>
               </div>
@@ -151,7 +151,7 @@ function Package() {
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
-                    ></img>
+                    />
                   </button>
                 </div>
               </div>
@@ -183,7 +183,7 @@ function Package() {
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
-                    ></img>
+                    />
                   </button>
                 </div>
               </div>

@@ -23,7 +23,7 @@ function Homepage() {
       className="Homepage w-full overflow-hidden relative h-screen flex flex-col justify-center"
     >
       <Header />
-      <div className="w-full z-20 flex justify-center  sm:mt-[7rem] relative PopUPAnimation items-center">
+      <div className="w-full z-20 flex justify-center mt-[6rem]  sm:mt-[7rem] relative PopUPAnimation items-center">
         <div className="bg-[#FF8311] w-[10rem] h-[0.4rem] text-[#FF8311]"></div>
         <img src={Logo} alt="" className="w-[16rem] h-full  sm:w-[25rem] " />
         <div className="bg-[#FF8311] ml-[1rem] h-[0.4rem] w-[10rem] text-[#FF8311]"></div>
