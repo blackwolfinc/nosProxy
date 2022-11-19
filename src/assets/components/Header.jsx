@@ -90,13 +90,13 @@ export const Header = (data) => {
       </div>
 
       {OpenNavabar ? (
-        <div className="fixed bottom-0 w-screen h-[92vh] flex justify-center space-y-4 text-xl text-white flex-col py-[2rem] bg-[#323639] z-50">
+        <div className="fixed bottom-0 w-screen h-[92vh] flex justify-center space-y-10 text-3xl  text-white flex-col py-[2rem] bg-[#323639] z-50">
           <button
             onClick={() => {
               setOpenNavabar(false);
               navigate("/");
             }}
-            className="hover:text-[#FF8311]  hover:font-bold"
+            className="hover:text-[#FF8311] tracking-widest  hover:font-bold"
           >
             Homepage
           </button>
@@ -106,7 +106,7 @@ export const Header = (data) => {
               setOpenNavabar(false);
               navigate("/package");
             }}
-            className="hover:text-[#FF8311] hover:font-bold"
+            className="hover:text-[#FF8311] tracking-widest hover:font-bold"
           >
             Packages
           </button>
@@ -115,7 +115,7 @@ export const Header = (data) => {
               setOpenAbout(!OpenAbout);
               setOpenNavabar(false);
             }}
-            className="hover:text-[#FF8311]   tracking-widest hover:font-bold"
+            className="hover:text-[#FF8311] tracking-widest  tracking-widest hover:font-bold"
           >
             About Us
           </button>
