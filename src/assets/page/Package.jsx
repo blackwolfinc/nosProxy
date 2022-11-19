@@ -4,6 +4,7 @@ import { Navigate, Route, useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import Rocket from "../img/common/Rocket2.webp";
 import NextButton from "../img/icon/ShoppingCart.webp";
+import FullMoon from "../img/common/FullMoon.webp";
 
 function Package() {
   const navigate = useNavigate();
@@ -41,19 +42,25 @@ function Package() {
     speed: 500,
   };
   return (
-    <div className="Package w-full overflow-hidden relative h-screen flex flex-col justify-center">
+    <div className="Package w-full  sm:overflow-y-hidden    overflow-x-hidden relative h-screen flex flex-col justify-center">
       <Header counter={false} />
-      <div className=" counting tracking-[5.5px]  text-center text-6xl text-[#FFFFFF]/80">
+
+      <img
+        src={FullMoon}
+        alt=""
+        className=" absolute top-[20vh]   MoonAnimationPack  "
+      />
+      <div className=" counting tracking-[5.5px] mt-[8rem] sm:mt-[6rem]  text-center text-6xl text-[#FFFFFF]/80">
         Packages
       </div>
       <div className="relative  justify-center ">
         <img
           src={Rocket}
           alt=""
-          className="w-[19rem] h-[35em]   sm:ml-0 z-[16]  hidden sm:block top-[8vh] mt-[-9rem] right-[24vw] absolute   "
+          className="w-[19rem] h-[35em] SpaceShipPackage   sm:ml-0 z-[16]  hidden sm:block top-[8vh] mt-[-9rem] right-[24vw] absolute   "
         />
         <Slider asNavFor={Nav2} ref={(slider) => setSlider1(slider)}>
-          <div className="flex w-full  sm:p-10  justify-center text-center mt-[3rem] ">
+          <div className="flex w-full scale-90 sm:scale-100  sm:p-10  justify-center text-center mt-[3rem] ">
             <div className="w-full flex  justify-center ">
               <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col sm:flex-row justify-between p-[2rem]    flex w-full sm:w-10/12 2xl:w-9/12 border-[#4AB3FF]/80 rounded-[10px]">
                 <div className="flex flex-col  md:ml-9 2xl:ml-[17rem]">
@@ -85,7 +92,7 @@ function Package() {
               </div>
             </div>
           </div>
-          <div className="flex w-full  sm:p-10  justify-center text-center mt-[3rem]">
+          <div className="flex w-full   scale-90 sm:scale-100  sm:p-10  justify-center text-center mt-[3rem]">
             <div className="w-full flex justify-center ">
               <div className="bg-[#323639]/90  border-[4px] min-h-[16rem]  flex-col sm:flex-row  justify-between p-[2rem]     flex w-full sm:w-10/12 2xl:w-9/12 border-[#E72013]/80 rounded-[10px]">
                 <div className="flex flex-col  md:ml-9 2xl:ml-[17rem]">
@@ -118,7 +125,7 @@ function Package() {
             </div>
           </div>
 
-          <div className="flex w-full  sm:p-10  justify-center text-center mt-[3rem] ">
+          <div className="flex w-full  scale-90 sm:scale-100   sm:p-10  justify-center text-center mt-[3rem] ">
             <div className="w-full flex justify-center ">
               <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col sm:flex-row  justify-between p-[2rem]   flex w-full sm:w-10/12 2xl:w-9/12 border-[#47C9DB]/80 rounded-[10px]">
                 <div className="flex flex-col  md:ml-9 2xl:ml-[17rem]">
@@ -150,7 +157,7 @@ function Package() {
               </div>
             </div>
           </div>
-          <div className="flex w-full  sm:p-10  justify-center text-center mt-[3rem]">
+          <div className="flex w-full  scale-90 sm:scale-100   sm:p-10  justify-center text-center mt-[3rem]">
             <div className="w-full flex justify-center ">
               <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col sm:flex-row   justify-between p-[2rem]    flex w-full sm:w-10/12 2xl:w-9/12 border-[#FF8311]/80 rounded-[10px]">
                 <div className="flex flex-col  md:ml-9 2xl:ml-[17rem]">

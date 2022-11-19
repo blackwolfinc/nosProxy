@@ -37,14 +37,14 @@ code {
 }
 
 .Package {
-  background: url("/src/assets/img/background/moonBackground.webp");
+  background: #323639;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media all and (max-width: 440px) {
   .Package {
-    background: url("/src/assets/img/background/moonBackground.webp");
+    background: #323639;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -248,4 +248,75 @@ div.slick-slide.slick-active.slick-current {
 
 div.slick-slide.slick-center {
   opacity: 1 !important;
+}
+
+.SpaceShipPackage {
+  animation: SpaceShipPackageAnimation 60s ease-in-out 0s infinite normal
+    forwards;
+}
+
+@keyframes SpaceShipPackageAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    transform: translateY(0px);
+  }
+  20% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: translateY(-30px) translateX(-30px);
+  }
+  40% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: translateY(-10px) translateX(20px);
+  }
+  60% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: translateY(-50px) translateX(-20px);
+  }
+  80% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: translateY(-20px) translateX(20px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.MoonAnimationPack {
+  animation: MoonAnimationPackage 75s ease 0s infinite normal forwards;
+}
+
+@media all and (max-width: 440px) {
+  .MoonAnimationPack {
+    animation: MoonAnimationPackage 80s ease 0s infinite normal forwards;
+  }
+}
+@keyframes MoonAnimationPackage {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg);
+  }
+  40% {
+    animation-timing-function: ease-in;
+    opacity: 0.9;
+    transform: scale(0.95) rotate(180deg);
+  }
+
+  80% {
+    animation-timing-function: ease-in;
+    opacity: 0.9;
+    transform: scale(0.95) rotate(240deg);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px) rotate(360deg);
+  }
 }
