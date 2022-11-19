@@ -91,27 +91,24 @@ export const Header = (data) => {
 
       {OpenNavabar ? (
         <div className="fixed bottom-0 w-screen h-[92vh] flex justify-center space-y-4 text-xl text-white flex-col py-[2rem] bg-[#323639] z-50">
-          <button>
-            <Link
-              onClick={() => {
-                setOpenNavabar(false);
-              }}
-              to={"/"}
-              className="hover:text-[#FF8311] hover:font-bold"
-            >
-              Homepage
-            </Link>
+          <button
+            onClick={() => {
+              setOpenNavabar(false);
+              navigate("/");
+            }}
+            className="hover:text-[#FF8311] hover:font-bold"
+          >
+            Homepage
           </button>
-          <button>
-            <Link
-              onClick={() => {
-                setOpenNavabar(false);
-              }}
-              to={"/package"}
-              className="hover:text-[#FF8311] hover:font-bold"
-            >
-              Packages
-            </Link>
+
+          <button
+            onClick={() => {
+              setOpenNavabar(false);
+              navigate("/package");
+            }}
+            className="hover:text-[#FF8311] hover:font-bold"
+          >
+            Packages
           </button>
           <button
             onClick={() => {
