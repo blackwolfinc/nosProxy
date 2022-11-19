@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../img/common/Logo.png";
+import MenuIcon from "../img/icon/menuIcon.webp";
+import { AboutUs } from "./AboutUs";
 
 export const Header = (data) => {
   const navigate = useNavigate();
@@ -8,6 +10,7 @@ export const Header = (data) => {
   const [CounterStats, setCounterStats] = useState(
     data.counter == false ? data.counter : true
   );
+  const [OpenAbout, setOpenAbout] = useState(false);
 
   const counter = (minimum, maximum) => {
     for (let count = minimum; count <= maximum; count++) {
@@ -22,17 +25,44 @@ export const Header = (data) => {
   }, []);
 
   return (
-    <div className="flex w-full justify-between px-[3rem] py-[3rem] absolute top-0 z-30">
+    <div className="flex w-full justify-between  md:px-[3rem] md:py-[2rem] absolute top-0 z-30">
       <div
         onClick={() => {
           navigate("/");
         }}
-        className=" hidden sm:flex"
+        className=" hidden md:flex"
       >
         <img src={Logo} alt="" className={"w-[13rem] h-full"} />
       </div>
-
-      <div className="PopUPAnimationNumber hidden sm:flex">
+      <div className="  flex md:hidden bg-[#222325] w-full py-[0.7rem] items-center px-[1.5rem]  justify-between top-0  fixed ">
+        <img src={Logo} alt="" className={"w-[5rem] h-full"} />
+        <img src={MenuIcon} alt="" className={"w-[2rem] opacity-75 h-full"} />
+      </div>
+      {CounterStats ? null : (
+        <div className="flex justify-end    w-full textbutton items-center text-xl tracking-widest space-x-4 text-[#fff]">
+          <div className="hidden  md:flex space-x-6 justify-end w-fit text-right">
+            <Link to={"/"} className="hover:text-[#FF8311] hover:font-bold">
+              Homepage
+            </Link>
+            <Link
+              to={"/package"}
+              className="hover:text-[#FF8311] hover:font-bold"
+            >
+              Packages
+            </Link>
+            <button
+              onClick={() => {
+                setOpenAbout(!OpenAbout);
+              }}
+              className="hover:text-[#FF8311]   tracking-widest hover:font-bold"
+            >
+              About Us
+            </button>
+          </div>
+        </div>
+      )}
+      {OpenAbout ? <AboutUs open={setOpenAbout} /> : null}
+      <div className="PopUPAnimationNumber hidden md:flex">
         {CounterStats ? (
           <>
             {" "}

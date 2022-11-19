@@ -168,6 +168,10 @@ code {
   animation: PopUPAnimation 7s ease 0s normal forwards;
 }
 
+.PopUPAnimation2 {
+  animation: PopUPAnimation 2s ease 0s normal forwards;
+}
+
 @keyframes PopUPAnimation {
   0% {
     animation-timing-function: ease-in;

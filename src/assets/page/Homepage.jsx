@@ -65,7 +65,7 @@ function Homepage() {
           className="w-[55rem] absolute bottom-0 opacity-80 MoonAnimation"
         />
       </div>
-      <div className="z-20 absolute space-x-4 PopUPAnimation  bottom-[2rem] counting right-[4rem] text-[1.3rem] text-[#fff]">
+      <div className="z-20 hidden sm:flex absolute space-x-4 PopUPAnimation  bottom-[2rem] counting right-[4rem] text-[1.3rem] text-[#fff]">
         <button
           onClick={() => {
             navigate("/package");

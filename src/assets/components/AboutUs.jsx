@@ -1,7 +1,6 @@
 import React from "react";
 import NextButton from "../img/icon/Close.webp";
 export const AboutUs = (data) => {
-  console.log(data);
   return (
     <div className="w-screen h-screen bg-[#323639]/80 absolute z-[30] md:px-[5.8rem] md:py-[6rem]">
       <div className="bg-[#323639] w-full h-full md:rounded-2xl  p-[1rem] md:p-[3rem] md:border-[8px] overflow-hidden overflow-y-auto border-[#C3752D] relative">
