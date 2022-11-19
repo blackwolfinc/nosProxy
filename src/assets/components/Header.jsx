@@ -11,7 +11,7 @@ export const Header = (data) => {
     data.counter == false ? data.counter : true
   );
   const [OpenAbout, setOpenAbout] = useState(false);
-  const [OpenNavabar, setOpenNavabar] = useState(true);
+  const [OpenNavabar, setOpenNavabar] = useState(false);
 
   const counter = (minimum, maximum) => {
     for (let count = minimum; count <= maximum; count++) {
