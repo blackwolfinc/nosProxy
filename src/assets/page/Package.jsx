@@ -50,7 +50,7 @@ function Package() {
         alt=""
         className=" absolute top-[20vh]   MoonAnimationPack  "
       />
-      <div className=" counting tracking-[5.5px] mt-[8rem] sm:mt-[6rem]  text-center text-6xl text-[#FFFFFF]/80">
+      <div className=" counting tracking-[5.5px] z-50  mt-[8rem] sm:mt-[6rem]  text-center text-6xl text-[#FFFFFF]">
         Packages
       </div>
       <div className="relative  justify-center ">

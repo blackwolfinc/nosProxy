@@ -288,7 +288,7 @@ div.slick-slide.slick-center {
 }
 
 .MoonAnimationPack {
-  animation: MoonAnimationPackage 75s ease 0s infinite normal forwards;
+  animation: MoonAnimationPackage 100s ease-in-out 0s infinite alternate;
 }
 
 @media all and (max-width: 440px) {
@@ -300,23 +300,28 @@ div.slick-slide.slick-center {
   0% {
     animation-timing-function: ease-in;
     opacity: 1;
-    transform: translateY(0px) rotate(0deg);
+    transform: scale(0.95) rotate(0deg);
   }
-  40% {
-    animation-timing-function: ease-in;
+  /* 30% {
+    animation-timing-function: ease;
     opacity: 0.9;
     transform: scale(0.95) rotate(180deg);
   }
 
-  80% {
-    animation-timing-function: ease-in;
+  60% {
+    animation-timing-function: ease;
     opacity: 0.9;
     transform: scale(0.95) rotate(240deg);
   }
 
+  90% {
+    animation-timing-function: ease;
+    opacity: 1;
+    transform: scale(0.95) rotate(320deg);
+  } */
   100% {
     animation-timing-function: ease-out;
     opacity: 1;
-    transform: translateY(0px) rotate(360deg);
+    transform: scale(0.95) rotate(360deg);
   }
 }
