@@ -94,7 +94,7 @@ export const Header = (data) => {
       </div>
 
       {OpenNavabar ? (
-        <div className="fixed bottom-0 w-screen h-[89vh] flex justify-center space-y-10 text-2xl  text-white flex-col py-[2rem] bg-[#323639] z-50">
+        <div className="fixed bottom-0 w-screen h-[90vh] flex justify-center space-y-10 text-2xl  text-white flex-col py-[2rem] bg-[#323639] z-50">
           <button
             onClick={() => {
               setOpenNavabar(false);
