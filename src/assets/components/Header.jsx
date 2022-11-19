@@ -11,6 +11,7 @@ export const Header = (data) => {
     data.counter == false ? data.counter : true
   );
   const [OpenAbout, setOpenAbout] = useState(false);
+  const [OpenNavabar, setOpenNavabar] = useState(true);
 
   const counter = (minimum, maximum) => {
     for (let count = minimum; count <= maximum; count++) {
@@ -34,9 +35,23 @@ export const Header = (data) => {
       >
         <img src={Logo} alt="" className={"w-[13rem] h-full"} />
       </div>
-      <div className="  flex md:hidden bg-[#222325] w-full py-[0.7rem] items-center px-[1.5rem]  justify-between top-0  fixed ">
-        <img src={Logo} alt="" className={"w-[5rem] h-full"} />
-        <img src={MenuIcon} alt="" className={"w-[2rem] opacity-75 h-full"} />
+      <div className="  flex md:hidden bg-[#222325] w-full py-[0.8rem] items-center px-[1.5rem]  justify-between top-0  fixed ">
+        <img
+          onClick={() => {
+            navigate("/");
+          }}
+          src={Logo}
+          alt=""
+          className={"w-[5rem] h-full"}
+        />
+        <img
+          src={MenuIcon}
+          onClick={() => {
+            setOpenNavabar(!OpenNavabar);
+          }}
+          alt=""
+          className={"w-[2rem] opacity-75 h-full"}
+        />
       </div>
       {CounterStats ? null : (
         <div className="flex justify-end    w-full textbutton items-center text-xl tracking-widest space-x-4 text-[#fff]">
@@ -73,6 +88,42 @@ export const Header = (data) => {
           </>
         ) : null}
       </div>
+
+      {OpenNavabar ? (
+        <div className="fixed bottom-0 w-screen h-[92vh] flex justify-center space-y-4 text-xl text-white flex-col py-[2rem] bg-[#323639] z-50">
+          <button>
+            <Link
+              onClick={() => {
+                setOpenNavabar(false);
+              }}
+              to={"/"}
+              className="hover:text-[#FF8311] hover:font-bold"
+            >
+              Homepage
+            </Link>
+          </button>
+          <button>
+            <Link
+              onClick={() => {
+                setOpenNavabar(false);
+              }}
+              to={"/package"}
+              className="hover:text-[#FF8311] hover:font-bold"
+            >
+              Packages
+            </Link>
+          </button>
+          <button
+            onClick={() => {
+              setOpenAbout(!OpenAbout);
+              setOpenNavabar(false);
+            }}
+            className="hover:text-[#FF8311]   tracking-widest hover:font-bold"
+          >
+            About Us
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 };
