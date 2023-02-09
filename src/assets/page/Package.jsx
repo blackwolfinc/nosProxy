@@ -57,7 +57,7 @@ function Package() {
         <img
           src={Rocket}
           alt=""
-          className="w-[17rem] SpaceShipPackage   lg:ml-0 z-[16]  hidden lg:block top-[3vh] mt-[-9rem] right-[24vw] absolute   "
+          className="w-[30rem] SpaceShipPackage   lg:ml-0 z-[16]  hidden lg:block top-[3vh] mt-[0rem] right-[20vw] absolute   "
         />
         <Slider asNavFor={Nav2} ref={(slider) => setSlider1(slider)}>
           <div className="flex w-full scale-90 lg:scale-100  lg:p-10  justify-center text-center mt-[3rem] ">
