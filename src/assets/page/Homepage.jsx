@@ -92,12 +92,12 @@ function Homepage() {
         {OpenAbout ? <AboutUs open={setOpenAbout} /> : null}
       </div>
 
-      <div className="bg-[#323639]  w-full flex z-[5] h-[30rem] justify-center p-[4rem] ">
-        <div className="z-[100] absolute mb-[-20rem] bg-gradient-to-br from-[#323639] via-[#323639] to-[#51585c]  scale-95 duration-300 ease-in-out hover:scale-100   flex-col w-9/12 self-center flex py-[2rem] px-[2rem] rounded-md  bottom-0 border-[#FF8311]/80  border-[4px] justify-center">
+      <div className="bg-[#323639]  w-full flex z-[5] h-[35rem]  md:h-[30rem] justify-center p-[4rem] ">
+        <div className="z-[100] absolute  mb-[-32rem] md:mb-[-20rem] bg-gradient-to-br from-[#323639] via-[#323639] to-[#51585c]  scale-95 duration-300 ease-in-out hover:scale-100   flex-col w-full md:w-9/12 self-center flex py-[2rem] px-[2rem] rounded-md  bottom-0 border-[#FF8311]/80  border-[4px] justify-center">
           <h1 className="font-semibold text-2xl text-white mt-[0.2rem] uppercase">
-            Residential DC proxies (package box)
+            Residential DC proxies 
           </h1>
-          <p className="text-white/60">
+          <p className="text-white/60 mt-[1rem] md:mt-0">
             {" "}
             Top business level residential ISP as AT&T or COX
           </p>
@@ -107,8 +107,8 @@ function Homepage() {
             while enjoying the reliability and capabilities of premium
             residential IP addresses
           </span>
-          <div className="flex justify-center items-center mt-[2rem] mb-[1rem]">
-            <div className="flex w-full justify-start  text-white/80 textbutton ">
+          <div className="flex justify-center flex-col md:flex-row items-center mt-[2rem] mb-[1rem]">
+            <div className="flex w-full flex-col md:flex-row mb-[2rem] md:mb-0 justify-start  text-white/80 textbutton ">
               <span className="px-4 py-4 bg-[#4AB3FF]/20 font-semibold">
                 Unlimited Data
               </span>

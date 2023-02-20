@@ -42,14 +42,14 @@ function Package() {
     speed: 500,
   };
   return (
-    <div className="Package w-full   lg:overflow-y-hidden    overflow-x-hidden relative h-screen flex flex-col justify-center">
+    <div className="Package w-full   lg:overflow-y-hidden    overflow-x-hidden relative  md:h-screen flex flex-col justify-center">
       <Header counter={false} />
       <img
         src={FullMoon}
         alt=""
         className=" absolute top-[20vh]    MoonAnimationPack  "
       />
-      <div className=" PopUPAnimation2 counting tracking-[5.5px] z-20  mt-[22rem] md:mt-[6rem]  text-center text-4xl  lg:text-6xl text-[#FFFFFF]">
+      <div className=" PopUPAnimation2 counting tracking-[5.5px] z-20   mt-[30rem] md:mt-[6rem]  text-center text-4xl  lg:text-6xl text-[#FFFFFF]">
         Packages
       </div>
       <div className="relativ text-center   PopUPAnimation2 justify-center ">
@@ -178,7 +178,7 @@ function Package() {
           </div>
           <div className="flex w-full  scale-90 lg:scale-100   lg:p-10  justify-center text-center mt-[3rem]">
           <div className="w-full flex flex-col md:flex-row justify-center group ">
-              <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col lg:flex-row   justify-between p-[2rem]    flex w-full w-6/12 2xl:w-9/12 border-[#FF8311]/80 rounded-[10px]">
+              <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col lg:flex-row   justify-between p-[2rem]    flex w-full md:w-6/12 2xl:w-9/12 border-[#FF8311]/80 rounded-[10px]">
                 <div className="flex flex-col  lg:ml-9 2xl:ml-[17rem]">
                   <div className="bg-[#323639] py-2 px-4 rounded-md">
                     <span className="counting text-center text-4xl text-[#FF8311]">
@@ -217,14 +217,14 @@ function Package() {
             </div>
           </div>
         </Slider>
-        <div className="flex justify-center mb-[1rem] mt-[-1.4rem]">
+        <div className="flex justify-center mb-[1rem]  md:mt-[-1.4rem]">
           <h1 className="text-white/60 text-sm font-semibold  px-[1rem] hover:scale-105 duration-300 ease-in-out">
             Experience lightning-fast speeds with our premium DC proxies, all
             while enjoying the reliability and capabilities of premium
             residential IP addresses
           </h1>
         </div>
-        <div className="w-full self-center flex justify-center mt-[1rem] lg:mt-0 2xl:mt-[3rem] ">
+        <div className="w-full self-center flex justify-center mt-[1rem] lg:mt-0 2xl:mt-[3rem] mb-[3rem]">
           <di className="relative  w-9/12 block inline-block hidden lg:block">
             <Slider
               asNavFor={Nav1}

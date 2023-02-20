@@ -26,7 +26,7 @@ export const Header = (data) => {
   }, []);
 
   return (
-    <div className="flex w-full justify-between  md:px-[3rem] md:py-[2rem] absolute top-0 z-30">
+    <div className="flex w-full justify-between  md:px-[3rem] md:py-[2rem] absolute top-0 z-[200]">
       <div
         onClick={() => {
           navigate("/");
