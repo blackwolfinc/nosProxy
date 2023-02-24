@@ -49,7 +49,7 @@ function Package() {
         alt=""
         className=" absolute top-[20vh]    MoonAnimationPack  "
       />
-      <div className=" PopUPAnimation2 counting tracking-[5.5px] z-20   mt-[30rem] md:mt-[6rem]  text-center text-4xl  lg:text-6xl text-[#FFFFFF]">
+      <div className=" PopUPAnimation2 counting tracking-[5.5px] z-20   mt-[30rem] md:mt-[15rem]  text-center text-4xl  lg:text-6xl text-[#FFFFFF]">
         Packages
       </div>
       <div className="relativ text-center   PopUPAnimation2 justify-center ">
