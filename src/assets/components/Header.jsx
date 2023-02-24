@@ -8,8 +8,9 @@ export const Header = (props) => {
   const navigate = useNavigate();
 
   const [Count, setCount] = useState(0);
-  const [CounterStats, setCounterStats] = useState();
-  const [OpenAbout, setOpenAbout] = useState(false);
+  const [CounterStats, setCounterStats] = useState(
+    props.counter == false ? props.counter : true
+  );  const [OpenAbout, setOpenAbout] = useState(false);
   const [OpenNavabar, setOpenNavabar] = useState(false);
 
   const counter = (minimum, maximum) => {

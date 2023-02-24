@@ -5,7 +5,7 @@ export const Footer = (props) => {
 
     const navigate = useNavigate()
   return (
-    <div className="flex md:space-x-4  flex-col md:flex-row  px-[0rem] md:pb-[2rem]   mt-[-1rem] bg-[#323639]  items-center justify-around  z-[9920]  text-[1.3rem] text-[#fff]">
+    <div className="flex md:space-x-4  flex-col md:flex-row  px-[0rem] md:pb-[2rem] md:pt-[3rem]   mt-[-1rem] bg-[#323639]  items-center justify-around  z-[9920]  text-[1.3rem] text-[#fff]">
       <div className="flex scale-75 md:scale-100 space-x-4">
         <button
           onClick={() => {
