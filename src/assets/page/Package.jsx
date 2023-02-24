@@ -55,7 +55,7 @@ function Package() {
       <div className="relativ text-center   PopUPAnimation2 justify-center ">
         <Slider asNavFor={Nav2} ref={(slider) => setSlider1(slider)}>
           <div className="flex w-full scale-90 lg:scale-100  lg:p-10  justify-center text-center mt-[2rem] ">
-          <div className="w-full flex flex-col md:flex-row justify-center group ">
+            <div className="w-full flex flex-col md:flex-row justify-center group ">
               <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col lg:flex-row justify-between p-[2rem]    flex w-full lg:w-6/12 2xl:w-9/12 border-[#4AB3FF]/80 rounded-[10px]">
                 <div className="flex flex-col  lg:ml-9 2xl:ml-[17rem]">
                   <div className="bg-[#323639] py-2 px-4 rounded-md">
@@ -73,8 +73,8 @@ function Package() {
                       IP
                     </span>
                     <span className="text-white/60 text-left textbutton uppercase tracking-[1.5px] mt-[1rem] text-[12px]">
-                    Top business level residential ISP as AT&T or COX
-                  </span>
+                      Top business level residential ISP as AT&T or COX
+                    </span>
                   </div>
                 </div>
                 <div className="w-full lg:w-2/12 flex items-center justify-center mt-[2rem] lg:mt-0">
@@ -88,7 +88,7 @@ function Package() {
                 </div>
               </div>
               <div className="border-[#4AB3FF]/80 md:hidden group-hover:flex group-hover:block group-hover:duration-300  textbutton space-y-3 justify-center  mb-[1rem] md:mb-0  tracking-[4.5px]  flex-col  font-semibold bg-[#323639] border-[3px] w-full md:w-3/12 md:ml-[1rem] mt-4 md:mt-0 rounded-md p-4 text-white text-center">
-                <p >Unlimited Data</p>
+                <p>Unlimited Data</p>
                 <p>100GBPS network</p>
                 <p>Residential ASN</p>
               </div>
@@ -119,17 +119,20 @@ function Package() {
                   </span>
                 </div>
                 <div className="w-full lg:w-2/12 flex items-center justify-center mt-[2rem] lg:mt-0">
-                  <button className="bg-[#323639] p-4 border-[#E72013] border-[2px] hover:scale-105 duration-300 rounded-md">
+                  <a
+                    href="https://client.nosproxy.com/cart.php?a=add&pid=6"
+                    className="bg-[#323639] p-4 border-[#E72013] border-[2px] hover:scale-105 duration-300 rounded-md"
+                  >
                     <img
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="border-[#E72013]/80 md:hidden group-hover:flex group-hover:block group-hover:duration-300  textbutton space-y-3 justify-center  mb-[1rem] md:mb-0  tracking-[4.5px]  flex-col  font-semibold bg-[#323639] border-[3px] w-full md:w-3/12 md:ml-[1rem] mt-4 md:mt-0 rounded-md p-4 text-white text-center">
-                <p >Unlimited Data</p>
+                <p>Unlimited Data</p>
                 <p>100GBPS network</p>
                 <p>Residential ASN</p>
               </div>
@@ -139,7 +142,7 @@ function Package() {
           <div className="flex w-full flex-row  scale-90 lg:scale-100  lg:p-10  justify-center text-center mt-[2rem] md:mt-[3rem]">
             <div className="w-full flex flex-col md:flex-row justify-center group ">
               <div className="bg-[#323639]/90   border-[4px] min-h-[16rem]  flex-col lg:flex-row  justify-between p-[2rem]     flex w-full lg:w-6/12 2xl:w-9/12 border-[#47C9DB]/80 rounded-[10px]">
-              <div className="flex flex-col   lg:ml-9 2xl:ml-[17rem]">
+                <div className="flex flex-col   lg:ml-9 2xl:ml-[17rem]">
                   <div className="bg-[#323639]  py-2 px-4 rounded-md">
                     <span className="counting text-center text-4xl text-[#47C9DB]/80">
                       STARTER
@@ -155,29 +158,32 @@ function Package() {
                       IP
                     </span>
                     <span className="text-white/60 text-left textbutton uppercase tracking-[1.5px] mt-[1rem] text-[12px]">
-                    Top business level residential ISP as AT&T or COX
-                  </span>
+                      Top business level residential ISP as AT&T or COX
+                    </span>
                   </div>
                 </div>
                 <div className="w-full lg:w-2/12 flex items-center justify-center mt-[2rem] lg:mt-0">
-                  <button className="bg-[#323639] p-4 border-[#47C9DB] border-[2px] hover:scale-105 duration-300 z-50  rounded-md">
+                  <a
+                    href="https://client.nosproxy.com/cart.php?a=add&pid=5"
+                    className="bg-[#323639] p-4 border-[#47C9DB] border-[2px] hover:scale-105 duration-300 z-50  rounded-md"
+                  >
                     <img
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="border-[#47C9DB]/80 md:hidden group-hover:flex group-hover:block group-hover:duration-300  textbutton space-y-3 justify-center  mb-[1rem] md:mb-0  tracking-[4.5px]  flex-col  font-semibold bg-[#323639] border-[3px] w-full md:w-3/12 md:ml-[1rem] mt-4 md:mt-0 rounded-md p-4 text-white text-center">
-                <p >Unlimited Data</p>
+                <p>Unlimited Data</p>
                 <p>100GBPS network</p>
                 <p>Residential ASN</p>
               </div>
             </div>
           </div>
           <div className="flex w-full  scale-90 lg:scale-100   lg:p-10  justify-center text-center mt-[3rem]">
-          <div className="w-full flex flex-col md:flex-row justify-center group ">
+            <div className="w-full flex flex-col md:flex-row justify-center group ">
               <div className="bg-[#323639]/90 border-[4px] min-h-[16rem] flex-col lg:flex-row   justify-between p-[2rem]    flex w-full md:w-6/12 2xl:w-9/12 border-[#FF8311]/80 rounded-[10px]">
                 <div className="flex flex-col  lg:ml-9 2xl:ml-[17rem]">
                   <div className="bg-[#323639] py-2 px-4 rounded-md">
@@ -195,22 +201,22 @@ function Package() {
                       IP
                     </span>
                     <span className="text-white/60 text-left textbutton uppercase tracking-[1.5px] mt-[1rem] text-[12px]">
-                    Top business level residential ISP as AT&T or COX
-                  </span>
+                      Top business level residential ISP as AT&T or COX
+                    </span>
                   </div>
                 </div>
                 <div className="w-full lg:w-2/12 flex items-center justify-center mt-[2rem] lg:mt-0">
-                  <button className="bg-[#323639] p-4 border-[#FF8311] border-[2px]  hover:scale-105 duration-300  rounded-md">
+                  <a  href="https://client.nosproxy.com/cart.php?a=add&pid=5"  className="bg-[#323639] p-4 border-[#FF8311] border-[2px]  hover:scale-105 duration-300  rounded-md">
                     <img
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="border-[#FF8311]/80 md:hidden group-hover:flex group-hover:block group-hover:duration-300  textbutton space-y-3 justify-center  mb-[1rem] md:mb-0  tracking-[4.5px]  flex-col  font-semibold bg-[#323639] border-[3px] w-full md:w-3/12 md:ml-[1rem] mt-4 md:mt-0 rounded-md p-4 text-white text-center">
-                <p >Unlimited Data</p>
+                <p>Unlimited Data</p>
                 <p>100GBPS network</p>
                 <p>Residential ASN</p>
               </div>
@@ -224,7 +230,7 @@ function Package() {
             residential IP addresses
           </h1>
         </div>
-        <div className="w-full self-center flex justify-center mt-[1rem] lg:mt-0 2xl:mt-[3rem] mb-[3rem]">
+        <div className="w-full self-center flex justify-center mt-[1rem] lg:mt-0 2xl:mt-[3rem] mb-[10rem]">
           <di className="relative  w-9/12 block inline-block hidden lg:block">
             <Slider
               asNavFor={Nav1}
@@ -244,7 +250,6 @@ function Package() {
                   <span className="counting lg:tracking-[5.5px]   text-sm text-[#fff]">
                     256-1024 <span className="text-[#4AB3FF] text-sm">IPs</span>
                   </span>
-                      
                 </div>
               </div>
 
@@ -282,7 +287,7 @@ function Package() {
               </div>
             </Slider>
           </di>
-          <div className="relative  w-9/12 block inline-block lg:hidden block">
+          <div className="relative  w-9/12 block i lg:hidden ">
             <Slider
               asNavFor={Nav1}
               ref={(slider) => setSlider2(slider)}

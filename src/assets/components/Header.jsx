@@ -4,12 +4,11 @@ import Logo from "../img/common/Logo.png";
 import MenuIcon from "../img/icon/menuIcon.webp";
 import { AboutUs } from "./AboutUs";
 
-export const Header = (data) => {
+export const Header = (props) => {
   const navigate = useNavigate();
+
   const [Count, setCount] = useState(0);
-  const [CounterStats, setCounterStats] = useState(
-    data.counter == false ? data.counter : true
-  );
+  const [CounterStats, setCounterStats] = useState();
   const [OpenAbout, setOpenAbout] = useState(false);
   const [OpenNavabar, setOpenNavabar] = useState(false);
 
@@ -38,7 +37,7 @@ export const Header = (data) => {
       <div
         className={`${
           OpenNavabar ? " bg-gradient-to-b from-[#222325]  to-[#222325]" : null
-        }  flex md:hidden w-full py-[1.5rem] items-center px-[1.5rem]  justify-between top-0  fixed `}
+        }  ${props.data ? "bg-[#222325]":null} flex md:hidden  w-full py-[1.5rem] items-center px-[1.5rem]  justify-between top-0  fixed `}
       >
         <img
           onClick={() => {
