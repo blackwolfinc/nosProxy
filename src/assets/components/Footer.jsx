@@ -5,7 +5,7 @@ export const Footer = (props) => {
 
     const navigate = useNavigate()
   return (
-    <div className="flex md:space-x-4  flex-col md:flex-row  px-[0rem] md:pb-[2rem] md:pt-[3rem]   mt-[-1rem] bg-[#323639]  items-center justify-around  z-[9920]  text-[1.3rem] text-[#fff]">
+    <div className="flex md:space-x-4 relative flex-col md:flex-row  px-[0rem] md:pb-[2rem] md:pt-[3rem]   mt-[-3rem] bg-[#323639]  items-center justify-around  z-[9920]  text-[1.3rem] text-[#fff]">
       <div className="flex scale-75 md:scale-100 space-x-4">
         <button
           onClick={() => {
@@ -27,7 +27,7 @@ export const Footer = (props) => {
      <div className="flex flex-col scale-75 md:scale-100  mt-[2rem] md:mt-0 text-center md:text-left"> 
     
      <a
-        className="hover:scale-95 duration-200 ease-in-out uppercase font-light hover:text-[#FF8311]"
+        className="hover:scale-105 duration-200 ease-in-out uppercase font-light hover:text-[#FF8311]"
         href="mailto:info@nosproxy.com"
         type="Email"
       >
@@ -36,7 +36,6 @@ export const Footer = (props) => {
       </a>
       <p className="text-[12px] font-extralight">© 2023 Nos-Proxy</p>
       </div>
-    
     </div>
   );
 };

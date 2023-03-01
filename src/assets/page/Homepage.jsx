@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { AboutUs } from "../components/AboutUs";
@@ -7,39 +7,39 @@ import { Header } from "../components/Header";
 import MoonIconFull from "../img/common/FullMoon.webp";
 import Logo from "../img/common/Logo.png";
 import NextButton from "../img/icon/Login.webp";
+import ChartIcon from "../img/icon/ShoppingCart.webp";
 import Rocket from "../img/webp/Rocket.webp";
 function Homepage() {
   const navigate = useNavigate();
-  const myRef = useRef(null);
   const [OpenAbout, setOpenAbout] = useState(false);
   const [setFristLoad, setsetFristLoad] = useState(false);
- const [onScrolMobile, setonScrolMobile] = useState(false)
+  const [onScrolMobile, setonScrolMobile] = useState(false);
 
   useEffect(() => {
-    if (setFristLoad == false) {
+    if (setFristLoad === false) {
       setTimeout(() => {
         setsetFristLoad(true);
       }, 5000);
     }
   }, []);
 
-
   return (
     <div className="overflow-hidden">
       <div
         onScroll={(e) => {
-          console.log(e)
-          if (e.deltaY >= 60 && onScrolMobile === false  ) {
-            setonScrolMobile(true)
-          } else if (e.deltaY < 60 && onScrolMobile === true ) {
-            setonScrolMobile(false)          }
+          console.log(e);
+          if (e.deltaY >= 60 && onScrolMobile === false) {
+            setonScrolMobile(true);
+          } else if (e.deltaY < 60 && onScrolMobile === true) {
+            setonScrolMobile(false);
+          }
         }}
         className="Homepage w-full   relative h-screen flex flex-col justify-center"
       >
         <Header data={onScrolMobile} />
         <div className="w-full z-50 flex justify-center mt-[6rem]  sm:mt-[7rem] relative PopUPAnimation items-center">
           <div className="bg-[#FF8311] w-[10rem] h-[0.4rem] text-[#FF8311]"></div>
-          <img  src={Logo} alt="" className="w-[16rem] h-full  sm:w-[25rem]  " />
+          <img src={Logo} alt="" className="w-[16rem] h-full  sm:w-[25rem]  " />
           <div className="bg-[#FF8311] ml-[1rem] h-[0.4rem] w-[10rem] text-[#FF8311]"></div>
         </div>
         <div className=" z-50  text-center text-[#fff] PopUPAnimation counting text-xl mt-[1rem]">
@@ -58,10 +58,15 @@ function Homepage() {
         </div>
         <div className="w-full bg-gradient-to-br from-gray-700/20 via-gray-900/20 to-black/80  min-h-[107.7rem] 2xl:min-h-[114rem] absolute z-[45]"></div>
         <div className=" z-50 text-center text-[#fff] counting flex justify-center text-xl  PopUPAnimation mt-[3rem]">
-          <button onClick={()=>{
-            window.open('https://client.nosproxy.com/index.php?rp=/login','_blank')
-        
-          }} className="bg-[#323639]/80 px-[4rem] flex   items-center hover:scale-105 shadow-2xl space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300 	 rounded-[52.11px] border-[#78818A] border-[2px]">
+          <button
+            onClick={() => {
+              window.open(
+                "https://client.nosproxy.com/index.php?rp=/login",
+                "_blank"
+              );
+            }}
+            className="bg-[#323639]/80 px-[4rem] flex   items-center hover:scale-105 shadow-2xl space-x-2 textbutton py-[0.7rem] hover:border-[#FF8311] duration-300 	 rounded-[52.11px] border-[#78818A] border-[2px]"
+          >
             <span>LOGIN OR JOIN</span>
             <img src={NextButton} className={"w-[1rem] h-[1rem]"} alt=""></img>
           </button>
@@ -74,11 +79,11 @@ function Homepage() {
             className="w-[65rem] mb-[-5rem] sm:mb-[-19.5rem] ml-[-5rem] sm:ml-0 z-40 absolute bottom-0   SpaceAnimation"
           />
         </div>
-        <div className="hover:scale-5 ml-[-20rem] ">
+        <div className="hover:scale-7 ml-[-20rem] ">
           <img
             src={MoonIconFull}
             alt=""
-            className="w-[85rem] mb-[-25rem] absolute bottom-0 z-10 opacity-70 MoonAnimation"
+            className="w-[105rem] mb-[-35rem] ml-[-3rem] absolute bottom-0 z-10  opacity-70 MoonAnimation"
           />
         </div>
 
@@ -100,6 +105,7 @@ function Homepage() {
             while enjoying the reliability and capabilities of premium
             residential IP addresses
           </span>
+        
           <div className="flex justify-center flex-col md:flex-row items-center mt-[2rem] mb-[1rem]">
             <div className="flex w-full flex-col md:flex-row mb-[2rem] md:mb-0 justify-start  text-white/80 textbutton ">
               <span className="px-4 py-4 bg-[#4AB3FF]/20 font-semibold">
@@ -116,15 +122,16 @@ function Homepage() {
               onClick={() => {
                 navigate("/package");
               }}
-              className="bg-[#323639] uppercase font-bold hover:bg-[#FF8311] hover:text-white text-[#FF8311] p-4 w-[10rem] border-[#FF8311] flex justify-center items-center border-[2px] hover:scale-105 duration-300 z-50  rounded-md"
+              className="bg-[#323639] uppercase mt-[1.5rem] font-bold hover:bg-[#FF8311] hover:text-white text-[#FF8311] p-4 w-[13rem] border-[#FF8311] flex justify-center items-center border-[2px] hover:scale-105 duration-300 z-50  rounded-md"
             >
+              <img src={ChartIcon} className={"w-[1.5rem] h-[1.5rem] mr-[1rem]"} alt="" />
               Buy Now
             </button>
           </div>
         </div>
       </div>
 
-      <Footer setOpenAbout={setOpenAbout} OpenAbout={OpenAbout}/>
+      <Footer setOpenAbout={setOpenAbout} OpenAbout={OpenAbout} />
     </div>
   );
 }

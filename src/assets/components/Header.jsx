@@ -8,8 +8,8 @@ export const Header = (props) => {
   const navigate = useNavigate();
 
   const [Count, setCount] = useState(0);
-  const [CounterStats, setCounterStats] = useState(
-    props.counter == false ? props.counter : true
+  const [CounterStats] = useState(
+    props.counter === false ? props.counter : true
   );  const [OpenAbout, setOpenAbout] = useState(false);
   const [OpenNavabar, setOpenNavabar] = useState(false);
 
@@ -69,6 +69,12 @@ export const Header = (props) => {
             >
               Packages
             </Link>
+            <a
+              href={"https://client.nosproxy.com/contact.php"}
+              className="hover:text-[#FF8311] hover:font-bold"
+            >
+              Contact Us
+            </a>
             <button
               onClick={() => {
                 setOpenAbout(!OpenAbout);

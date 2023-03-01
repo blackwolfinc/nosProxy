@@ -1,16 +1,11 @@
-import { Header } from "../components/Header";
-import { useEffect, useRef, useState } from "react";
-import { Navigate, Route, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
-import Rocket from "../img/common/Rocket2.webp";
-import NextButton from "../img/icon/ShoppingCart.webp";
+import { Header } from "../components/Header";
 import FullMoon from "../img/common/FullMoon.webp";
+import NextButton from "../img/icon/ShoppingCart.webp";
 
 function Package() {
-  const navigate = useNavigate();
-  const myRef = useRef(null);
 
-  const [OpenAbout, setOpenAbout] = useState(false);
   const [Nav1, setNav1] = useState(null);
   const [Nav2, setNav2] = useState(null);
 
@@ -22,8 +17,6 @@ function Package() {
   const [Slider1, setSlider1] = useState();
   const [Slider2, setSlider2] = useState();
 
-  const slider1 = useRef();
-  const slider2 = useRef();
 
   const settings = {
     className: "center",
@@ -78,13 +71,16 @@ function Package() {
                   </div>
                 </div>
                 <div className="w-full lg:w-2/12 flex items-center justify-center mt-[2rem] lg:mt-0">
-                  <button className="bg-[#323639] p-4 border-[#4AB3FF] border-[2px] hover:scale-105 duration-300  rounded-md">
+                  <a
+                    href="https://client.nosproxy.com/cart.php?a=add&pid=8"
+                    className="bg-[#323639] p-4 border-[#4AB3FF] border-[2px] hover:scale-105 duration-300  rounded-md"
+                  >
                     <img
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}
                       alt=""
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="border-[#4AB3FF]/80 md:hidden group-hover:flex group-hover:block group-hover:duration-300  textbutton space-y-3 justify-center  mb-[1rem] md:mb-0  tracking-[4.5px]  flex-col  font-semibold bg-[#323639] border-[3px] w-full md:w-3/12 md:ml-[1rem] mt-4 md:mt-0 rounded-md p-4 text-white text-center">
@@ -206,7 +202,10 @@ function Package() {
                   </div>
                 </div>
                 <div className="w-full lg:w-2/12 flex items-center justify-center mt-[2rem] lg:mt-0">
-                  <a  href="https://client.nosproxy.com/cart.php?a=add&pid=5"  className="bg-[#323639] p-4 border-[#FF8311] border-[2px]  hover:scale-105 duration-300  rounded-md">
+                  <a
+                    href="https://client.nosproxy.com/cart.php?a=add&pid=5"
+                    className="bg-[#323639] p-4 border-[#FF8311] border-[2px]  hover:scale-105 duration-300  rounded-md"
+                  >
                     <img
                       src={NextButton}
                       className={"w-[3rem] h-[3rem]"}

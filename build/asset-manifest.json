@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.763ddb32.css",
+    "main.js": "/static/js/main.4fe4ea57.js",
+    "static/js/787.dca02e11.chunk.js": "/static/js/787.dca02e11.chunk.js",
+    "static/media/FullMoon.webp": "/static/media/FullMoon.ace8d8e356d647844a8e.webp",
+    "static/media/background.webp": "/static/media/background.86a5d39432dfa5e01d1f.webp",
+    "static/media/Rocket.webp": "/static/media/Rocket.6e38455a603252aeda42.webp",
+    "static/media/Logo.png": "/static/media/Logo.d236ad2e74042381f59d.png",
+    "static/media/menuIcon.webp": "/static/media/menuIcon.d5e7dbbc01555ad2e526.webp",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/ShoppingCart.webp": "/static/media/ShoppingCart.f0066a684aa03db6f40b.webp",
+    "static/media/Close.webp": "/static/media/Close.174a29f3154dd6aaa075.webp",
+    "static/media/Login.webp": "/static/media/Login.694b939ceae9f9785ca1.webp",
+    "main.763ddb32.css.map": "/static/css/main.763ddb32.css.map",
+    "main.4fe4ea57.js.map": "/static/js/main.4fe4ea57.js.map",
+    "787.dca02e11.chunk.js.map": "/static/js/787.dca02e11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.763ddb32.css",
+    "static/js/main.4fe4ea57.js"
+  ]
+}
